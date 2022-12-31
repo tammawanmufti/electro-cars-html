@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --button-hover-color: rgb(227, 111, 68);
+  --button-color: coral;
+  --link-color: rgb(170, 77, 0);
+  --text-color:rgb(35, 16, 0);
+  --transparent-bg:rgba(255, 206, 151, 0.48);
+}
+
+
+
+body {
+  color: var(--text-color);
+  margin: 0;
+  font-family: "Manrope";
+  
+}
+
+.container {
+  max-width: 1024px;
+  min-width: 720px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.logo > img {
+  height: 50px;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.transparent-background {
+  background-color: var(--transparent-bg);
+}
+
+.header-separator{
+  width: 100%;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='100' preserveAspectRatio='none' viewBox='0 0 1440 100'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1181%26quot%3b)' fill='none'%3e%3crect width='1440' height='100' x='0' y='0' fill='rgba(255%2c 206%2c 151%2c 0.48)'%3e%3c/rect%3e%3cpath d='M 0%2c35 C 32%2c42.6 96%2c79.4 160%2c73 C 224%2c66.6 256%2c0.4 320%2c3 C 384%2c5.6 416%2c82 480%2c86 C 544%2c90 576%2c20.4 640%2c23 C 704%2c25.6 736%2c95.2 800%2c99 C 864%2c102.8 896%2c42.2 960%2c42 C 1024%2c41.8 1056%2c104.2 1120%2c98 C 1184%2c91.8 1216%2c15.6 1280%2c11 C 1344%2c6.4 1408%2c62.2 1440%2c75L1440 100L0 100z' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1181'%3e%3crect width='1440' height='100' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar li {
+  padding-left: 16px;
+  float: left;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.navbar a:hover {
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+.hero {
+  
+  margin-top: -50px;
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  
+}
+
+.hero > a {
+  height: fit-content;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: var(--button-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.hero > a:hover {
+  background-color: var(--button-hover-color);
+}
+
+.hero > h1 {
+  width: 60%;
+}
+
+.hero > p {
+  width: 40%;
+}
+
+.feature {
+  height: 50vh;
+}
